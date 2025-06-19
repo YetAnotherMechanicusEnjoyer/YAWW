@@ -8,6 +8,41 @@
     <link rel="icon" href="assets/img/weather.png" type="image/x-icon">
   </head>
   <body>
+    <header>
+      <h1>Weather</h1>
+      <nav>
+        <div class="header-box">
+          <a href="index.html">
+            <div class="box">
+              Home
+            </div>
+          </a>
+          <a href="map.html">
+            <div class="box">
+              Map
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
 
+    <form id="city-form" action="#" method="post">
+      <div class="form-box">
+        <input type="text" name="city" placeholder="City (e.g: Paris)" required>
+      </div>
+      <div class="form-box">
+        <select id="units" name="units">
+          <option value="metric">Metric</option>
+          <option value="us">US</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+      <div class="form-box">
+        <button type="submit">Get City's Weather</button>
+      </div>
+    </form>
+
+    <div id="city-weather"></div>
+    <script src="assets/js/index.cjs"></script>
   </body>
 </html>
