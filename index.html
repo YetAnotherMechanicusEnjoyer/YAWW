@@ -3,46 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Weather - Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/weather.png" type="image/x-icon">
   </head>
   <body>
     <header>
-      <h1>Weather</h1>
-      <nav>
-        <div class="header-box">
-          <a href="index.html">
-            <div class="box">
-              Home
-            </div>
-          </a>
-          <a href="map.html">
-            <div class="box">
-              Map
-            </div>
-          </a>
-        </div>
-      </nav>
+      <div class="header-logo">
+        <img src="assets/img/weather.png" alt="Weather Logo" class="logo"/>
+      </div>
+      <div class="header-center">
+        <h1>Weather</h1>
+        <nav>
+          <div class="header-box">
+            <a href="index.html">
+              <div class="box">
+                Home
+              </div>
+            </a>
+            <a href="map.html">
+              <div class="box">
+                Map
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+    <div class="header-spacer" />
     </header>
 
-    <form id="city-form" action="#" method="post">
-      <div class="form-box">
-        <input type="text" name="city" placeholder="City (e.g: Paris)" required>
-      </div>
-      <div class="form-box">
-        <select id="units" name="units">
-          <option value="metric">Metric</option>
-          <option value="us">US</option>
-          <option value="uk">UK</option>
-        </select>
-      </div>
-      <div class="form-box">
-        <button type="submit">Get City's Weather</button>
-      </div>
-    </form>
+    <div class="city">
+      <form id="city-form" action="#" method="post">
+        <div class="form-box">
+          <input type="text" name="city" placeholder="City (e.g: Paris)" required>
+        </div>
+        <div class="form-box">
+          <select id="units" name="units">
+            <option value="metric">Metric</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+        <div class="form-box">
+          <button type="submit">Get City's Weather</button>
+        </div>
+      </form>
 
-    <div id="city-weather"></div>
-    <script src="assets/js/index.cjs"></script>
+      <div id="city-weather"></div>
+      <script src="assets/js/index.cjs"></script>
+    </div>
+
+    <footer>
+        <p>Copyright &copy 2025 YetAnotherMechanicusEnjoyer. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
