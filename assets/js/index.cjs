@@ -23,7 +23,7 @@ document.getElementById('city-form').addEventListener('submit', async function (
 
     const content = `<p>
       <strong>Weather in ${formData.city}:</strong><br>
-      🌡️ Temp: ${current.temp}${formData.unit === "US" ? "°F" : "°C"}<br>
+      🌡️ Temp: ${current.temp}${formData.unit === "us" ? "°F" : "°C"}<br>
       💧 Humidity: ${current.humidity}%<br>
       🌬️ Wind Speed: ${current.windspeed} ${formData.unit === "metric" ? "km/h" : "miles/h"}
       </p>
