@@ -48,8 +48,14 @@ header {
   padding: 0;
 }
 
+.header-center h3 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 nav {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .header-box {
