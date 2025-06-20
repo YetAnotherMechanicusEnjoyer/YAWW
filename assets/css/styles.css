@@ -1,24 +1,55 @@
-body {
-  background-color: #222222;
+html, body {
+  height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #02de70;
-    color: white;
-    padding: 0.2em;
-    height: 160px;
-    text-align: center;
-    font-size : 20px;
+body {
+  background-color: #222222;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
-header h1 {
+header {
+  background-color: #02de70;
   color: white;
+  padding: 0.2em;
+  height: 140px;
+  text-align: center;
+  font-size : 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: initial;
+  grid-row: 1;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 140px;
+  width: auto;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-center h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .header-box {
@@ -34,7 +65,9 @@ nav {
   text-align: center;
   height: 30px;
   color: white;
-  padding: 0 10px 0;
+  padding: 0 10px;
+  line-height: 30px;
+  white-space: nowrap;
 }
 
 .box:hover {
@@ -43,10 +76,14 @@ nav {
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-spacer {
+  flex-basis: 160px;
 }
 
 .form-container {
@@ -113,8 +150,8 @@ button:hover {
 }
 
 #city-weather p {
-  background-color: #ccc;
-  color: white;
+  background-color: #eee;
+  color: #333;
   padding: 20px;
   border: none;
   border-radius: 13px 5px;
@@ -129,8 +166,14 @@ button:hover {
 }
 
 #map {
-  margin: 3em;
-  height: 700px;
+  height: 750px;
   width: 90%;
   border: 2px solid #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  flex-shrink: 0;
 }
